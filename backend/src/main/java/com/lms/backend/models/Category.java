@@ -1,5 +1,7 @@
 package com.lms.backend.models;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -15,6 +17,6 @@ public class Category {
     @Id
     private String id;
     private String Name;
-    private String[] LecturerIds;
-    private String[] CourseIds;
+    private List<String> LecturerIds;
+    private List<String> CourseIds;
 }
